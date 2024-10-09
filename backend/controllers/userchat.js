@@ -136,15 +136,3 @@ export const deleteChat = async (req, res) => {
     res.status(500).send("Error deleting chat!");
   }
 };
-
-// get all chats
-
-export const getAllChats = async (req, res) => {
-  try {
-    const chats = await Chat.find();
-    res.status(200).send(chats);
-  } catch (err) {
-    console.log(err);
-    res.status(500).send("Error fetching chats!");
-  }
-};

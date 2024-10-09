@@ -19,6 +19,5 @@ router.get("/chats/:id", ClerkExpressRequireAuth(), getChats);
 router.put("/chats/:id", ClerkExpressRequireAuth(), updateChats);
 // routes/chatRoutes.js
 router.delete("/chats/:id", ClerkExpressRequireAuth(), deleteChat);
-router.get("/chats", getAllChats);
 
 export default router;
